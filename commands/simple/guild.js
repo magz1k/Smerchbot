@@ -17,7 +17,7 @@ class InfoCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("C М Е Р Ч")
-            .addField("Офицеры", "Фтучка, Васятха, Науретанец, Михаря", true)
+            .addField("Офицеры", "Фтучка, Васятха, Науретанец, Михаря, Павилика", true)
             .addField("Рейд Тайм", "Пн. Вт. Ср. Чт. Пт. Сб. Вс. с 20:30 до 00:00", true)
             .addField("Аддоны", "BigWigs|DBM - Exorsus Raid Tools - WA|TMW - RCLootCouncil| Astral Keys", true)
             .addField("Шмот", "365+ | Шея 27+", true)
