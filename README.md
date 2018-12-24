@@ -1,2 +1,2 @@
 # Smerchbot
-test bot
+Smerch (BlackScar) guild bot
