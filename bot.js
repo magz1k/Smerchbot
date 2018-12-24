@@ -37,7 +37,7 @@ bot.on ('message', function(message){
     }
     else if(message.content == 'daddy')
     {
-        message.channel.sendMessage('@Oldfag is my daddy');
+        message.channel.sendMessage('@266371022213611521 is my daddy');
     }
 });
    
