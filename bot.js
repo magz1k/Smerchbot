@@ -35,6 +35,10 @@ bot.on ('message', function(message){
         }
         message.channel.send(teamInfo);
     }
+    else if(message.content == 'daddy')
+    {
+        message.channel.sendMessage(message.autor + '@Oldfag is my daddy');
+    }
 });
    
 
