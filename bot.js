@@ -44,8 +44,8 @@ bot.on ('message', function(message){
 bot.on("message", function(message) {
   bot.on('voiceStateUpdate', (oldMember, newMember) => {
     console.log('lol');
-    let newUserChannel = newMember.voiceChannel
-    let oldUserChannel = oldMember.voiceChannel
+    let newUserChannel = newMember.voiceChannelID
+    let oldUserChannel = oldMember.voiceChannelID
     var channel = client.channelsID.get('525481284584079360');
     if(oldUserChannel === 518000470795747329 && newUserChannel !== 518000470795747329) {
       channel.send('has joined a voice channel');
