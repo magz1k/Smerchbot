@@ -31,7 +31,7 @@ bot.on ('message', function(message){
         .setTitle("Current team Members")
         for(var i = 0; i < currentTeamMembers.lenght; i++) 
         {
-            teamInfo.addField("Member" + (i+1).toString(),currentTeamMembers[i].username);
+            teamInfo.addField("Member " + i.toString(),currentTeamMembers[i].username);
         }
         message.channel.send(teamInfo);
     }
