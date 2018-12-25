@@ -52,8 +52,8 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
            + newUserChannel.name + "Channel");
 
   }
+});
 
-   
 
 bot.on('ready', function(){
     console.log("Ready");
