@@ -40,6 +40,19 @@ bot.on ('message', function(message){
         message.channel.sendMessage(message.author + '@oldfag#3527 is my daddy');
     }
 });
+
+bot.on('voiceStateUpdate', (oldMember, newMember) => {
+  let newUserChannel = newMember.voiceChannel
+  let oldUserChannel = oldMember.voiceChannel
+
+
+  if(!oldUserChannel && newUserChannel) {
+
+    bot.channels.get('525481284584079360').send("User went form Channel" + oldUserChannel.name + "to the new" 
+           + newUserChannel.name + "Channel");
+
+  }
+
    
 
 bot.on('ready', function(){
