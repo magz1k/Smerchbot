@@ -44,8 +44,8 @@ bot.on ('message', function(message){
 
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
     // Here I'm storing the IDs of their voice channels, if available
-    let oldChannel = oldMember.voiceChannel ? oldMember.voiceChannelID === 518000470795747329 : null;
-    let newChannel = newMember.voiceChannel ? newMember.voiceChannelID === 518000470795747329 : null;
+    let oldChannel = oldMember.voiceChannel ? oldMember.voiceChannelID : null;
+    let newChannel = newMember.voiceChannel ? newMember.voiceChannelID : null;
     if (oldChannel == newChannel) return; // If there has been no change, exit
   
     // Here I'm getting the bot's channel (bot.voiceChannel does not exist)
