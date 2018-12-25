@@ -15,7 +15,7 @@ global.servers = {};
 
 bot.on("guildMemberAdd", function(member)
 {
-    member.send("Добро пожаловать на сервер!");
+    member.send("Добро пожаловать на сервер! Для авторизации перейдите в канал NEW USER и ожидайте авторизации. Вас перенесут в нужный канал или авторизуют в определенную группу");
     let memberRole = member.guild.roles.find("name", "New member");
     member.addRole(memberRole);
 });
