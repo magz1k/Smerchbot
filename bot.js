@@ -23,7 +23,7 @@ bot.on("guildMemberAdd", function(member)
 bot.on ('message', function(message){
     if(message.content == 'Hello')
     {
-        message.channel.sendMessage('Hello' + message.autor + 'how are you ?');
+        message.channel.sendMessage('Hello' + message.author + 'how are you ?');
     }
     else if(message.content == "What team")
     {
@@ -37,7 +37,7 @@ bot.on ('message', function(message){
     }
     else if(message.content == 'daddy')
     {
-        message.channel.sendMessage( message.autor + '@oldfag#3527 is my daddy');
+        message.channel.sendMessage( message.author + '@oldfag#3527 is my daddy');
     }
 });
    
