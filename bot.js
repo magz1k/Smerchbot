@@ -52,7 +52,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
       botChannel = botMember ? botMember.voiceChannelID : null;
   
     // Here I'm getting the channel, just replace VVV this VVV with the channel's ID
-    let textChannel = oldMember.guild.channels.get('525481284584079360);
+    let textChannel = oldMember.guild.channels.get('525481284584079360');
     if (!textChannel) throw new Error("That channel does not exist.");
   
     // Here I don't need to check if they're the same, since it would've exit before
