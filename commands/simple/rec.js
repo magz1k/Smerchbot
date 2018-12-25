@@ -21,7 +21,7 @@ class InfoCommand extends commando.Command
             .addField("Рейд Тайм", "Пн. Ср. Чт. Вс. с 21:30 до 00:00", true)
             .addField("Рекрутинг", "ДД: Маг, Лок, Сова, ДК. Хил: ХолиДЦ. Наш коллектив будет рад всем желающим присоединиться и продолжить покорять новое дополнение в наших рядах", true)
             .addField("Требования", "• itmlvl 370+ • Возможность посещения более 95% рейдов • Быть подготовленным к боссу - ознакомится в атласе, прочитать тактику, посмотреть видео гайды. • Адекватное понимание рейдовой политики и решений руководства гильдии (у нас практикуются ротации и замены), • Согласие с #правила-гильдии", true)
-            .addField("Аддоны", "Настроенную   - BigWigsи DBM - Exorsus Raid Tools - WA и TMW - RCLootCouncil  Astral Keys", true)
+            .addField("Аддоны", "Настроенную   - BigWigs и DBM - Exorsus Raid Tools - WA и TMW - RCLootCouncil  Astral Keys", true)
             .setDescription ("Информация о гильдии")
             .setColor("#ff000a")
             .setThumbnail("https://cdn.discordapp.com/attachments/519132230010929153/521114484341997588/icon.png")
