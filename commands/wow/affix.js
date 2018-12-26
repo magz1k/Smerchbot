@@ -1,4 +1,5 @@
 const commando = require('discord.js-commando');
+const request = require('request-promise')
 
 class AffixCommand extends commando.Command
 {
@@ -15,7 +16,14 @@ class AffixCommand extends commando.Command
     async run(message , args)
     {
       module.exports = ({ character, realm, region }) => {
-      return request.get(`https://raider.io/api/v1/mythic-plus/affixes?region=${region}`)        
+      return request.get(`https://raider.io/api/v1/mythic-plus/affixes?region=${region}`) 
+      .then(res => {
+      const options = {}
+      const data = JSON.parse(res)
+      const message = data.title
+
+      return [message, options]
+    })       
     }
 }
 module.exports = AffixCommand;
