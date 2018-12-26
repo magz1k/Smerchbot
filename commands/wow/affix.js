@@ -14,8 +14,8 @@ class AffixCommand extends commando.Command
 
     async run(message , args)
     {
-        message.reply(message.author.avatarURL)
-        message.delete();
+      module.exports = ({ character, realm, region }) => {
+      return request.get(`https://raider.io/api/v1/mythic-plus/affixes?region=${region}`)        
     }
 }
 module.exports = AffixCommand;
