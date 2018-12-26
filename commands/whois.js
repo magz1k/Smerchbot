@@ -1,4 +1,22 @@
+const commando = require('discord.js-commando');
+
+class JoinTeamCommand extends commando.Command
+{
+    constructor(client)
+    {
+        super(client,{
+            name: 'whois',
+            group: '',
+            memberName: 'whois',
+            description: '?'
+        });
+    }
+
+    async run(message, args)
+    {
+      
 let snekfetch = require('snekfetch')
+
 
 module.exports.run = (bot, message, args, discord) => {
   let member = message.mentions.members.first();
@@ -22,3 +40,8 @@ module.exports.run = (bot, message, args, discord) => {
     console.error(err)
   })
 }
+
+
+    }
+}
+module.exports = WhoisCommand;
