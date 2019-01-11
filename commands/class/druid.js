@@ -9,7 +9,7 @@ class DruidCommand extends commando.Command
             name: 'druid',
             group: 'class',
             memberName: 'druid', 
-            description: 'класс Druid'
+            description: 'класс Друид'
         });
     }
 
