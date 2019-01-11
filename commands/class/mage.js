@@ -16,12 +16,12 @@ class MageCommand extends commando.Command
     async run(message , args)
     {
         var myinfo = new discord.RichEmbed()
-            .setTitle("Класс Маг") 
-            .addField("**Огонь**", "*!magefi*", true)
+            .setTitle("Класс Маг")
+            .addField("**Огонь**", "*!magefa*", true)
             .addField("**Лёд**", "*!magefr*", true)
             .addField("**Тайная магия**", "*!magesm*", true)
             .setDescription ("Выберите спек")
-            .setColor("#03ff8b")
+            .setColor("#5ec5ee")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/5/56/Ui-charactercreate-classes_mage.png")
             .setFooter("(c) Smerch Bot")
 
