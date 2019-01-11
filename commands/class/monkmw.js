@@ -6,9 +6,9 @@ class MonkmwCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'monk',
+            name: 'monkmw',
             group: 'class',
-            memberName: 'monk',
+            memberName: 'monkmw',
             description: 'класс Monk'
         });
     }
