@@ -1,14 +1,14 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class PristCommand extends commando.Command
+class PriestCommand extends commando.Command
 {
     constructor(client)
     {
         super(client,{
-            name: 'prist',
+            name: 'priest',
             group: 'class',
-            memberName: 'prist',
+            memberName: 'priest',
             description: 'класс Жрец'
         });
     }
@@ -17,15 +17,15 @@ class PristCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Жрец")
-            .addField("**Послушание**", "*!pristd*", true)
-            .addField("**Свет**", "*!pristh*", true)
-            .addField("**Тьма**", "*!prists*", true)
+            .addField("**Послушание**", "*!priestd*", true)
+            .addField("**Свет**", "*!priesth*", true)
+            .addField("**Тьма**", "*!priests*", true)
             .setDescription ("Выберите спек")
-            .setColor("#03ff8b")
+            .setColor("#ffffff")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/0/0f/Ui-charactercreate-classes_priest.png")
             .setFooter("(c) Smerch Bot")
 
             message.channel.sendEmbed(myinfo);
     }
 }
-module.exports = PristCommand;
+module.exports = PriestCommand;
