@@ -17,9 +17,9 @@ class MonkCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Монк")
-            .addField("Monk - **!monk**", true)
-            .addField("Brewmaster Monk - **!monkbm**", true)
-            .addField("Windwalker Monk - **!monkww*", true)
+            .addField("**Mistweaver Monk** - *!monkmw*", true)
+            .addField("**Brewmaster Monk** - *!monkbm*", true)
+            .addField("**Windwalker Monk** - *!monkww*", true)
             .setDescription ("выбирите спек")
             .setColor("#03ff8b")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/2/24/Ui-charactercreate-classes_monk.png")
