@@ -23,7 +23,6 @@ class MonkCommand extends commando.Command
             .setDescription ("выбирите спек")
             .setColor("#03ff8b")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/2/24/Ui-charactercreate-classes_monk.png")
-            .setURL("https://")
             .setFooter("(c) Smerch Bot")
 
             message.channel.sendEmbed(myinfo);
