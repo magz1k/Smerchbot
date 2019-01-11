@@ -22,7 +22,7 @@ class DruidCommand extends commando.Command
             .addField("**Дерево**", "*!druidt*", true)
             .addField("**Кот**", "*!druidk*", true) 
             .setDescription ("Выберите спек")
-            .setColor("#03ff8b")
+            .setColor("#f6690a")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/6/6f/Ui-charactercreate-classes_druid.png")
             .setFooter("(c) Smerch Bot")
 
