@@ -21,7 +21,7 @@ class PalCommand extends commando.Command
             .addField("**Свет**", "*!palh*", true) ///меняем
             .addField("**Воздаяние**", "*!palr*", true) ///меняем
             .setDescription ("Выберите спек")
-            .setColor("#03ff8b")
+            .setColor("#f381b1")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/8/80/Ui-charactercreate-classes_paladin.png")
             .setFooter("(c) Smerch Bot")
 
