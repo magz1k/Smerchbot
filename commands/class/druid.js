@@ -6,9 +6,9 @@ class DruidCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'Druid',
+            name: 'druid',
             group: 'class',
-            memberName: 'Druid', 
+            memberName: 'druid', 
             description: 'класс Druid'
         });
     }
