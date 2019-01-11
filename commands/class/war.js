@@ -17,8 +17,8 @@ class WarrCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Воин")
-            .addField("**Защита**", "*!warbp*", true)
-            .addField("**Оружее**", "*!warba*", true)
+            .addField("**Защита**", "*!warp*", true)
+            .addField("**Оружее**", "*!wara*", true)
             .addField("**Неистовство**", "*!warf*", true)
             .setDescription ("Выберите спек")
             .setColor("#b9915d")
