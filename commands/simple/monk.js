@@ -21,7 +21,7 @@ class MonkCommand extends commando.Command
             .addField("Brewmaster Monk - **!monkbm**", true)
             .addField("Windwalker Monk - **!monkww*", true)
             .setDescription ("выбирите спек")
-            .setColor("#ff000a")
+            .setColor("#03ff8b")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/2/24/Ui-charactercreate-classes_monk.png")
             .setURL("https://")
             .setFooter("(c) Smerch Bot")
