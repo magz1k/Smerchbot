@@ -9,7 +9,7 @@ class MonkCommand extends commando.Command
             name: 'monk',
             group: 'simple',
             memberName: 'monk',
-            description: 'Monk'
+            description: 'класс Monk'
         });
     }
 
