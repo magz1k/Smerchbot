@@ -20,7 +20,7 @@ class MonkCommand extends commando.Command
             .addField("**Ткач туманов**", "*!monkmw*", true)
             .addField("**Хмелевар**", "*!monkbm*", true)
             .addField("**Танцующий с Ветром**", "*!monkww*", true)
-            .setDescription ("выбирите спек")
+            .setDescription ("Выберите спек")
             .setColor("#03ff8b")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/2/24/Ui-charactercreate-classes_monk.png")
             .setFooter("(c) Smerch Bot")
