@@ -7,7 +7,7 @@ class MonkCommand extends commando.Command
     {
         super(client,{
             name: 'monk',
-            group: 'simple',
+            group: 'class',
             memberName: 'Monk',
             description: 'класс Monk'
         });
@@ -17,9 +17,9 @@ class MonkCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Монк")
-            .addField("**Ткач туманов** - *!monkmw*", true)
-            .addField("**Хмелевар** - *!monkbm*", true)
-            .addField("**Танцующий с Ветром** - *!monkww*", true)
+            .addField("**Ткач туманов**", "*!monkmw*", true)
+            .addField("**Хмелевар**", "*!monkbm*", true)
+            .addField("**Танцующий с Ветром**", "*!monkww*", true)
             .setDescription ("выбирите спек")
             .setColor("#03ff8b")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/2/24/Ui-charactercreate-classes_monk.png")
