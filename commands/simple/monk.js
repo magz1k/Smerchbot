@@ -7,7 +7,7 @@ class MonkCommand extends commando.Command
     {
         super(client,{
             name: 'monk',
-            group: 'monk',
+            group: 'simple',
             memberName: 'Monk WA',
             description: 'WeakAurus - Monk'
         });
