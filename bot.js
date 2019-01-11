@@ -7,7 +7,7 @@ bot.on('ready', () => { bot.user.setGame('Бога') })
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
 bot.registry.registerGroup('team', 'Team');
-bot.registry.registerGroup('class', 'class');
+bot.registry.registerGroup('class', 'Сlass');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
