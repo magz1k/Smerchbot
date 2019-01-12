@@ -1,7 +1,7 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class MonkMWCommand extends commando.Command
+class MonkwmCommand extends commando.Command
 {
     constructor(client)
     {
@@ -35,4 +35,4 @@ class MonkMWCommand extends commando.Command
             message.channel.sendEmbed(myinfo);
     }
 }
-module.exports = MonkMWCommand;
+module.exports = MonkwmCommand;
