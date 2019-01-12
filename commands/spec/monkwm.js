@@ -17,8 +17,8 @@ class MonkwmCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Монк - Ткач туманов")
-            .addField("**WeakAurus**", "[Download](http://wago.io/N173IReX7) support BFA.", true)
-            .addField("**TellMeWhen**", "[Download](http://wago.io/N173IReX7) support BFA.", true)
+            .addField("**WeakAurus**", "[Download](http://wago.io/N173IReX7)", true)
+            .addField("**TellMeWhen**", "[Download](http://wago.io/N173IReX7)", true)
             .addField("**WeakAurus 3 **", "[Battle for Azeroth] (https://wago.io/N173IReX7)", true)
             .setImage("https://cdn.discordapp.com/attachments/519132230010929153/533769396074840085/wa2.png")
             .setDescription ("Addons")
