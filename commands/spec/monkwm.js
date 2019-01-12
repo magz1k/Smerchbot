@@ -7,7 +7,7 @@ class MonkwmCommand extends commando.Command
     {
         super(client,{
             name: 'monkmw',
-            group: 'class',
+            group: 'spec',
             memberName: 'monkmw',
             description: 'Монах Ткач туманов'
         });
