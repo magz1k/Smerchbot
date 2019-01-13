@@ -20,7 +20,7 @@ class MonkwmCommand extends commando.Command
             .addField("**WeakAuras**", "[Скачать](http://wago.io/N173IReX7)", true)
             .addField("**TellMeWhen**", "[Скачать](https://cdn.discordapp.com/attachments/533174103604199435/533352713539420186/MONK_8.1.0_VERSION_1.1.0_DECEMBER_15_2018.txt)", true)
             .addField("**some addons **", "[Battle for Azeroth](https://wago.io/N173IReX7)", true)
-            .setImage("https://wowanalyzer.com/static/media/weirdnelfandherfriend.8a538218.png")
+            .setImage("https://cdn.discordapp.com/attachments/521105677234601995/533809925714083850/1.gif")
             .setDescription ("Addons")
             .setColor("#03ff8b")
             .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/2/24/Ui-charactercreate-classes_monk.png")
