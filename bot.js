@@ -2,7 +2,7 @@ const Commando = require('discord.js-commando');
 const discord = require('discord.js');
 const bot = new Commando.Client();
 
-client.on("ready", () => {
+bot.on("ready", () => {
     client.user.setActivity("my code", { type: "WATCHING"})
 })
 
