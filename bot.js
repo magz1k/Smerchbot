@@ -2,9 +2,16 @@ const Commando = require('discord.js-commando');
 const discord = require('discord.js');
 const bot = new Commando.Client();
 
-bot.on("ready", () => {
-    bot.user.setActivity("my code", { type: "STREAMING", url: "https://www.youtube.com/watch?v=-0MHwdVg3rA" })
-})
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'ЗА ОРДУ!',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/monstercat"
+        }
+    });
+});
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
