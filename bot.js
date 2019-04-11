@@ -3,7 +3,7 @@ const discord = require('discord.js');
 const bot = new Commando.Client();
 
 bot.on("ready", () => {
-    bot.user.setActivity("за ОРДУ!", { type: "Топит"})
+    bot.user.setActivity("my code", { type: "STREAMING", url: "https://www.youtube.com/watch?v=-0MHwdVg3rA" })
 })
 
 bot.registry.registerGroup('simple', 'Simple');
