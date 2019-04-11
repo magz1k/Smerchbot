@@ -24,7 +24,7 @@ class InfoCommand extends commando.Command
             .addField("Аддоны", "Настроенную   - BigWigs и DBM - Exorsus Raid Tools - WA и TMW - RCLootCouncil  Astral Keys", true)
             .setDescription ("Информация о гильдии")
             .setColor("#ff000a")
-            .setThumbnail("https/cdn.discordapp.com/attachments/497545607981039626/566009400620220433/smerch_horde_3.png")
+            .setThumbnail("https://cdn.discordapp.com/attachments/519132230010929153/566030996592525332/6_Pre.png")
             .setURL("https://discord.gg/5nWU3q6")
             .setFooter("(c) Smerch Bot")
 
