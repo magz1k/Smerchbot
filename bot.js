@@ -3,7 +3,7 @@ const discord = require('discord.js');
 const bot = new Commando.Client();
 
 bot.on("ready", () => {
-    client.user.setActivity("my code", { type: "WATCHING"})
+    bot.user.setActivity("my code", { type: "WATCHING"})
 })
 
 bot.registry.registerGroup('simple', 'Simple');
