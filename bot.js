@@ -2,7 +2,7 @@ const Commando = require('discord.js-commando');
 const discord = require('discord.js');
 const bot = new Commando.Client();
 
-bot.on('ready', () => { bot.user.setActivity('Топит', { type: 'за Орду' })
+client.user.setActivity('За орду', { type: 'топим' });
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
