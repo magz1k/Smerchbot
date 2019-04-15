@@ -50,6 +50,10 @@ bot.on ('message', function(message){
     {
         message.channel.sendMessage(message.author + '@oldfag#3527 is my daddy');
     }
+    else if(message.content == 'Альянс')
+    {
+        message.channel.sendMessage(message.author + 'наверное **Орда**');
+    }
 });
 
 var badWords = [
@@ -69,23 +73,6 @@ bot.on('message', message => {
     message.channel.send("Сообщение удалено! содержит нецензурные слова");
   }
 });
-
-var badWords1 = [
-  'альянс',
-  'алики'
-];
-
-bot.on('message', message => {
-    var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
-    var containsBadWord1 = words.some(word => {
-    return badWords1.includes(word);
-    });
-    if (containsBadWord) {
-        message.edit(message.content.replace "[Орда]"))
-       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
-       .catch(console.error);
-    });
-
 
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
     // Here I'm storing the IDs of their voice channels, if available
@@ -110,7 +97,6 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
       textChannel.send(`${newMember} Join.`);
     }
   });
-
 
 
 bot.on('ready', function(){
