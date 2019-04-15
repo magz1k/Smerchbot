@@ -1,4 +1,4 @@
 # Smerchbot
 
 Smerch (soulflayer) guild bot
-![img] (https://media.discordapp.net/attachments/566204755781746690/566235171431514113/Discord-Wordmark-Black.png)
+https://github.com/magz1k/Smerchbot/blob/master/Discord-Wordmark-Black.png?raw=true
