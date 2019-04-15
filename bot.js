@@ -70,6 +70,23 @@ bot.on('message', message => {
   }
 });
 
+var badWords1 = [
+  'альянс',
+  'алики'
+];
+
+bot.on('message', message => {
+    var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
+    var containsBadWord1 = words.some(word => {
+    return badWords1.includes(word);
+    });
+    if (containsBadWord) {
+        message.edit(message.content.replace "[Орда]"))
+       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
+       .catch(console.error);
+    });
+
+
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
     // Here I'm storing the IDs of their voice channels, if available
     let oldChannel = oldMember.voiceChannel ? oldMember.voiceChannelID : null;
