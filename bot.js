@@ -53,10 +53,10 @@ bot.on ('message', function(message){
 });
 
 var badWords = [
-  'shit',
-  'ass',
-  'fuck',
-  'bitch'
+  'сука',
+  'бля',
+  'блять',
+  'мудак'
 ];
 
 bot.on('message', message => {
@@ -66,7 +66,7 @@ bot.on('message', message => {
   });
   if (containsBadWord) {
     message.delete(1);
-    message.channel.send("That word not appropriate!");
+    message.channel.send("Сообщение удалено! содержит нецензурные слова");
   }
 });
 
