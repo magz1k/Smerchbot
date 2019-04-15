@@ -50,14 +50,12 @@ bot.on ('message', function(message){
     {
         message.channel.sendMessage(message.author + '@oldfag#3527 is my daddy');
     }
+});
 
-    else if(message.content === '--Trump'){
-        message.reply('He is the president of the United States of 
-America!');
-    }
-    if(message.content === '--Putin'){
-        message.reply('He is the president of Russia!');
-    }
+bot.on('message', message => {
+    message.edit(message.content.replace(/asshole/gi, "[I'm stupid because I swear]"))
+       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
+       .catch(console.error);
 });
 
 
