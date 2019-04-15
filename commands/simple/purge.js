@@ -31,9 +31,7 @@ class PurgeCommand extends commando.Command {
         else if (channel.type === 'text') {
             return channel.fetchMessages({limit: numToPurge})
                 .then(msgs => channel.bulkDelete(msgs))
-                .then(msgs => msg.reply('Я удалил сообщения'))
-                .then(sentMessage => {
-                 sentMessage.delete(5000);
+                .then(msgs => msg.reply('Я удалил сообщения') =>msg.delete(5))
                 .catch(console.error);
         }
         else {
