@@ -50,6 +50,14 @@ bot.on ('message', function(message){
     {
         message.channel.sendMessage(message.author + '@oldfag#3527 is my daddy');
     }
+
+    else if(message.content === '--Trump'){
+        message.reply('He is the president of the United States of 
+America!');
+    }
+    if(message.content === '--Putin'){
+        message.reply('He is the president of Russia!');
+    }
 });
 
 
