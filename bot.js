@@ -52,10 +52,22 @@ bot.on ('message', function(message){
     }
 });
 
+var badWords = [
+  'shit',
+  'ass',
+  'fuck',
+  'bitch'
+];
+
 bot.on('message', message => {
-    message.edit(message.content.replace(/asshole/gi, "[I'm stupid because I swear]"))
-       .then(msg => console.log(`Updated the content of a message from ${msg.author}`))
-       .catch(console.error);
+  var words = message.content.toLowerCase().trim().match(/\w+|\s+|[^\s\w]+/g);
+  var containsBadWord = words.some(word => {
+    return badWords.includes(word);
+  });
+  if (containsBadWord) {
+    message.delete(1);
+    message.channel.send("That word not appropriate!");
+  }
 });
 
 
