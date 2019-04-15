@@ -80,7 +80,7 @@ bot.on('message', message => {
     return badWords1.includes(word);
   });
   if (containsBadWord1) {
-     message.reply('ЗА ОРДУ!');
+     message.content.replace('ОРДА!');
     }
 });
 
