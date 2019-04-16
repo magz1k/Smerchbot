@@ -34,19 +34,6 @@ bot.on ('message', function(message){
     {
         message.channel.sendMessage('Hello' + message.author + 'how are you ?');
     }
-    
-    else if (message.content == "team") 
-{
-//message.channel.send(currentTeamMembers);
-var teamInfo = new discord.RichEmbed()
-.setTitle("current team members")
-for(var i = 0; i < currentTeamMembers.length; i++) 
-{
- teamInfo.addField("member" + i.toString(),currentTeamMembers[i].username);
-}
-message.channel.sendEmbed(teamInfo);
-}
-    
     else if(message.content == 'daddy')
     {
         message.channel.sendMessage(message.author + '@oldfag#3527 is my daddy');
@@ -80,10 +67,6 @@ bot.on('message', message => {
     message.channel.send("Сообщение удалено! содержит нецензурные слова");
   }
 });
-
-
-
-
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
     // Here I'm storing the IDs of their voice channels, if available
     let oldChannel = oldMember.voiceChannel ? oldMember.voiceChannelID : null;
@@ -107,7 +90,6 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
       textChannel.send(`${newMember} Join.`);
     }
   });
-
 
 bot.on('ready', function(){
     console.log("Ready");
