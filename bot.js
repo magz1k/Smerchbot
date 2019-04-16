@@ -73,6 +73,18 @@ bot.on('message', message => {
   }
 });
 
+var tabHello = ['hi','hello','Hello', 'привет', 'Привет'];
+var tabAnsw = ['привет','хеллоу','hello', 'Bonjour ' + message.author + ', чем могу помочь ?'];
+var content = message.content.split(' ');
+
+for(var x = 0; x < content.length; x++){
+    if(tabHello.includes(content[x]) && message.isMentioned(client.user)){
+        var row = Math.floor(Math.random() * tabAnsw.length);
+        message.channel.send(tabAnsw[row]);
+    }
+}
+
+
 bot.on('voiceStateUpdate', (oldMember, newMember) => {
     // Here I'm storing the IDs of their voice channels, if available
     let oldChannel = oldMember.voiceChannel ? oldMember.voiceChannelID : null;
