@@ -17,7 +17,6 @@ bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
 bot.registry.registerGroup('team', 'Team');
 bot.registry.registerGroup('class', 'Сlass');
-bot.registry.registerGroup('spec', 'Spec');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
