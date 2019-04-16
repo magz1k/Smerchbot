@@ -35,16 +35,19 @@ bot.on ('message', function(message){
     {
         message.channel.sendMessage('Hello' + message.author + 'how are you ?');
     }
-    else if(message.content == "What team")
-    {
-        var teamInfo = new discord.RichEmbed()
-        .setTitle("Current team Members")
-        for(var i = 0; i < currentTeamMembers.lenght; i++) 
-        {
-            teamInfo.addField("Member " + (i+1).toString(),currentTeamMembers[i].username);
-        }
-        message.channel.send(teamInfo);
-    }
+    
+    else if (message.content == "what's the current team?") 
+{
+//message.channel.send(currentTeamMembers);
+var teamInfo = new discord.RichEmbed()
+.setTitle("current team members")
+for(var i = 0; i < currentTeamMembers.length; i++) 
+{
+ teamInfo.addField("member" + i.toString(),currentTeamMembers[i].username);
+}
+message.channel.sendEmbed(teamInfo);
+}
+    
     else if(message.content == 'daddy')
     {
         message.channel.sendMessage(message.author + '@oldfag#3527 is my daddy');
