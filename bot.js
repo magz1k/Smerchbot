@@ -15,6 +15,7 @@ bot.on('ready', () => {
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
+bot.registry.registerGroup('class', 'Class');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
