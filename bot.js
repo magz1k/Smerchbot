@@ -36,7 +36,7 @@ bot.on ('message', function(message){
         message.channel.sendMessage('Hello' + message.author + 'how are you ?');
     }
     
-    else if (message.content == "what's the current team?") 
+    else if (message.content == "team?") 
 {
 //message.channel.send(currentTeamMembers);
 var teamInfo = new discord.RichEmbed()
