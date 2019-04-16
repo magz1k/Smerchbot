@@ -55,7 +55,7 @@ bot.on ('message', function(message){
     }
     esle if(message.content.starsWith("hi")) {
         answer = ["hi", "Hello"];
-        message.channel.send(answer[Math.floor(Math.random () * answer.length)])'
+        message.channel.send(answer[Math.floor(Math.random() * answer.length)]);
     }
 });
 
