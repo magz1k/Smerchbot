@@ -23,7 +23,7 @@ class DruidCommand extends commando.Command
             .addField("**Кот**", "*!druidk*", true) 
             .setDescription ("Выберите спек")
             .setColor("#f6690a")
-            .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/6/6f/Ui-charactercreate-classes_druid.png")
+            .setThumbnail("https://media.discordapp.net/attachments/521105677234601995/567640472324014081/9_5_.png")
             .setFooter("(c) Smerch Bot")
 
             message.channel.sendEmbed(myinfo);
