@@ -21,7 +21,6 @@ class DruidCommand extends commando.Command
             .addField("**Медведь**", "*!druidb*", true)
             .addField("**Дерево**", "*!druidt*", true)
             .addField("**Кот**", "*!druidk*", true) 
-            .addField("<:tank:>", "are inline fields", true)
             .setDescription ("Выберите спек")
             .setColor("#f6690a")
             .setThumbnail("https://media.discordapp.net/attachments/521105677234601995/567640472324014081/9_5_.png")
