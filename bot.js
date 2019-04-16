@@ -33,6 +33,7 @@ bot.on ('message', function(message){
     if(message.content == 'Hello')
     {
         message.channel.sendMessage('Hello' + message.author + ' how are you ?');
+    }
 });
 
 var badWords = [
