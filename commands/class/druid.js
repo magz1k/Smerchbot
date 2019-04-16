@@ -17,7 +17,7 @@ class DruidCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Друид")
-            .addField("**Медведь**", "``js\*!druidb*```", true)
+            .addField("**Медведь**", "```js\*!druidb*```", true)
             .addField("**Баланс**", "*!druidm*", true) 
             .addField("**Дерево**", "*!druidt*", true)
             .addField("**Кот**", "*!druidk*", true) 
