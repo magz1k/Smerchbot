@@ -15,7 +15,7 @@ class WarriorCommand extends commando.Command
 
     async run(message , args)
     {
-        var myInfo = new.discord.RichEmbed()
+        var myInfo = new discord.RichEmbed()
         .setDescription("hello")
         .setColor("#fff000")
         message.channel.sendEmbed(myInfo);
