@@ -10,7 +10,6 @@ bot.on('ready', () => {
             type: "STREAMING",
             url: "https://www.twitch.tv/monstercat"
         }
-    });
 });
 
 bot.registry.registerGroup('simple', 'Simple');
