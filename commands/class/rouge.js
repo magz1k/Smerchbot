@@ -21,6 +21,8 @@ class RougeCommand extends commando.Command
             .addField("😱", "try exceeding some of them!", false)
             .setDescription ("Выберите спек")
             .setColor("10003140")
+        
+         message.channel.sendEmbed(myinfo);
     }  
 }
 module.exports = RougeCommand;
