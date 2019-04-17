@@ -1,12 +1,12 @@
 {
   "name": "bot",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "none",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
-  "author": "oldfag",
+  "author": "oldfagg",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
