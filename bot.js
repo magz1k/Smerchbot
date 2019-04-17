@@ -10,6 +10,7 @@ bot.on('ready', () => {
             type: "STREAMING",
             url: "https://www.twitch.tv/monstercat"
         }
+    });
 });
 
 bot.registry.registerGroup('simple', 'Simple');
@@ -17,7 +18,6 @@ bot.registry.registerGroup('music', 'Music');
 bot.registry.registerGroup('class', 'Class');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
-
 global.currentTeamMembers = [];
 global.servers = {};
 
