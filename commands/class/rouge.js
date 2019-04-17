@@ -15,18 +15,53 @@ class RougeCommand extends commando.Command
 
     async run(message , args)
     {
-        var myinfo = new discord.RichEmbed()
-            .setTitle("Класс Rouge")
-            .addField("**Assassination**", "[ссылка на гайд на англ](https://www.icy-veins.com/wow/guardian-druid-pve-tank-guide)", true) 
-            .addField("**Outlaw**", "*[ссылка на гайд на англ](https://www.icy-veins.com/wow/guardian-druid-pve-tank-guide)*", false)
-            .addField("**Subtlety**", "*[ссылка на гайд на англ](https://www.icy-veins.com/wow/guardian-druid-pve-tank-guide)*", false) 
-            .addField("**Leveling Up (1-120)**", "[ссылка на гайд](https://www.icy-veins.com/wow/guardian-druid-pve-tank-guide)", true) 
-            .setDescription ("Выберите спек")
-            .setColor("#03ff8b") ///тут ненадо
-            .setThumbnail("https://media.discordapp.net/attachments/541959166185701396/567983478717546506/9_2small_.png") /// тут ненадо
-            .setFooter("(c) Smerch Bot")
-
-            message.channel.sendEmbed(myinfo);
+        const embed = {
+  "title": "title ~~(did you know you can have markdown here too?)~~",
+  "description": "this supports [named links](https://discordapp.com) on top of the previously shown subset of markdown. ```\nyes, even code blocks```",
+  "url": "https://discordapp.com",
+  "color": 10003140,
+  "timestamp": "2019-04-17T08:14:50.077Z",
+  "footer": {
+    "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png",
+    "text": "footer text"
+  },
+  "thumbnail": {
+    "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+  },
+  "image": {
+    "url": "https://cdn.discordapp.com/embed/avatars/0.png"
+  },
+  "author": {
+    "name": "author name",
+    "url": "https://discordapp.com",
+    "icon_url": "https://cdn.discordapp.com/embed/avatars/0.png"
+  },
+  "fields": [
+    {
+      "name": "🤔",
+      "value": "some of these properties have certain limits..."
+    },
+    {
+      "name": "😱",
+      "value": "try exceeding some of them!"
+    },
+    {
+      "name": "🙄",
+      "value": "an informative error should show up, and this view will remain as-is until all issues are fixed"
+    },
+    {
+      "name": "<:thonkang:219069250692841473>",
+      "value": "these last two",
+      "inline": true
+    },
+    {
+      "name": "<:thonkang:219069250692841473>",
+      "value": "are inline fields",
+      "inline": true
+    }
+  ]
+};
+channel.send("this `supports` __a__ **subset** *of* ~~markdown~~ 😃 ```js\nfunction foo(bar) {\n  console.log(bar);\n}\n\nfoo(1);```", { embed });
     }
 }
 module.exports = RougeCommand;
