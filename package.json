@@ -1,19 +1,13 @@
 {
-  "name": "bot",
-  "version": "0.2.0",
-  "description": "none",
+  "name": "Test",
+  "description": "Test",
+  "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
   },
-  "author": "oldfagg",
-  "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.4.2",
-    "discord.js-commando": "^0.10.0",
-    "ffmpeg-binaries": "^4.0.0",
-    "opusscript": "0.0.6",
-    "ytdl-core": "^0.28.0",
+    "discord.js": "11.1.0",
     "request": "2.81.0"
   }
 }
