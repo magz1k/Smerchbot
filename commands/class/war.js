@@ -22,7 +22,7 @@ class WarrCommand extends commando.Command
             .addField("**Неистовство**", "*!warf*", true)
             .setDescription ("Выберите спек")
             .setColor("#b9915d")
-            .setThumbnail("https://d1u5p3l4wpay3k.cloudfront.net/wowpedia/3/37/Ui-charactercreate-classes_warrior.png")
+            .setThumbnail("")
             .setFooter("(c) Smerch Bot")
 
             message.channel.sendEmbed(myinfo);
