@@ -16,6 +16,9 @@ class RougeCommand extends commando.Command
     async run(message , args)
     {
         var myinfo = new discord.RichEmbed()
+            .setTitle("title ~~(did you know you can have markdown here too?)~~", "https://discordapp.com")
+            .addField("🤔", "some of these properties have certain limits...", false)
+            .addField("😱", "try exceeding some of them!", false)
             .setDescription ("Выберите спек")
             .setColor("#000000")
     }  
