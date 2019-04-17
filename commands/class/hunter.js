@@ -17,9 +17,9 @@ class HuntCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Охотник")
-            .addField("1", "2", true)
-            .addField("3", "4", true)
-            .addField("5", "6", true)
+            .addField("<:dd:567647267578707988>1", "2", true)
+            .addField("<:dd:567647267578707988>3", "4", true)
+            .addField("<:dd:567647267578707988>5", "6", true)
             .setDescription ("Информация о гильдии")
             .setColor("#ff000a")
             .setThumbnail("https://media.discordapp.net/attachments/521105677234601995/567640453227347969/7_8_.png")
