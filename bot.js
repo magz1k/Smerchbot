@@ -15,7 +15,6 @@ bot.on('ready', () => {
 
 bot.registry.registerGroup('simple', 'Simple');
 bot.registry.registerGroup('music', 'Music');
-bot.registry.registerGroup('wow', 'Wow');
 bot.registry.registerDefaults();
 bot.registry.registerCommandsIn(__dirname + '/commands');
 
@@ -67,34 +66,6 @@ bot.on('message', message => {
     message.channel.send("Сообщение удалено! содержит нецензурные слова");
   }
 });
-
-
-
-
-bot.on('voiceStateUpdate', (oldMember, newMember) => {
-    // Here I'm storing the IDs of their voice channels, if available
-    let oldChannel = oldMember.voiceChannel ? oldMember.voiceChannelID : null;
-    let newChannel = newMember.voiceChannel ? newMember.voiceChannelID : null;
-    if (oldChannel == newChannel) return; // If there has been no change, exit
-  
-    // Here I'm getting the bot's channel (bot.voiceChannel does not exist)
-    let botMember = oldMember.guild.member(bot.user),
-      botChannel = botMember ? botMember.voiceChannelID : null;
-  
-    // Here I'm getting the channel, just replace VVV this VVV with the channel's ID
-    let textChannel = oldMember.guild.channels.get('525481284584079360');
-    if (!textChannel) throw new Error("That channel does not exist.");
-  
-    // Here I don't need to check if they're the same, since it would've exit before
-    if (newChannel == botChannel) {
-      // console.log("A user left.");
-      textChannel.send(`${newMember} Leave.`);
-    } else if (oldChannel == botChannel) {
-      // console.log("A user join.");
-      textChannel.send(`${newMember} Join.`);
-    }
-  });
-
 
 bot.on('ready', function(){
     console.log("Ready");
