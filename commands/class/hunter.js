@@ -20,7 +20,7 @@ class HuntCommand extends commando.Command
             .addField("<:dd:567647267578707988>1", "2", true)
             .addField("<:dd:567647267578707988>3", "4", true)
             .addField("<:dd:567647267578707988>5", "6", true)
-            .setDescription ("Информация о гильдии")
+            .setDescription ("12345")
             .setColor("#ff000a")
             .setThumbnail("https://media.discordapp.net/attachments/521105677234601995/567640453227347969/7_8_.png")
             .setURL("https://discord.gg/5nWU3q6")
