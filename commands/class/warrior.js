@@ -1,5 +1,5 @@
 const commando = require('discord.js-commando');
-const discord = require('discord.js');
+const discord = require('discord.js')
 
 class WarriorCommand extends commando.Command
 {
@@ -16,9 +16,16 @@ class WarriorCommand extends commando.Command
     async run(message , args)
     {
         var myInfo = new discord.RichEmbed()
+        .setTitle("some Titel")
+        .addField("some Field", true)
+        .addField("some Field", true)
+        .addField("some Field", false)
         .setDescription("hello")
         .setColor("#fff000")
-        message.channel.sendEmbed(myInfo);
+        .setFooter("bla - bla - bla")
+        .setThumbnail(message.author.avatarURL)
+
+    message.channel.sendEmbed(myInfo);
     }
 }
 module.exports = WarriorCommand;
