@@ -7,7 +7,7 @@ class WarriorCommand extends commando.Command
     {
         super(client,{
             name: 'warrior',
-            group: 'class',
+            group: 'wow',
             memberName: 'warrior',
             description: 'ВОИН'
         });
