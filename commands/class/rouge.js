@@ -20,7 +20,7 @@ class RougeCommand extends commando.Command
             .addField("🤔", "some of these properties have certain limits...", false)
             .addField("😱", "try exceeding some of them!", false)
             .setDescription ("Выберите спек")
-            .setColor("10003140")
+            .setColor("#ff000a")
         
          message.channel.sendEmbed(myinfo);
     }  
