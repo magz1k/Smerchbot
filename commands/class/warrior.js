@@ -1,5 +1,5 @@
 const commando = require('discord.js-commando');
-const discord = require('discord.js')
+const discord = require('discord.js');
 
 class WarriorCommand extends commando.Command
 {
