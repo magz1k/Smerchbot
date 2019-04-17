@@ -1,7 +1,7 @@
 const commando = require('discord.js-commando');
 const discord = require('discord.js');
 
-class DruidCommand extends commando.Command
+class RougeCommand extends commando.Command
 {
     constructor(client)
     {
@@ -29,4 +29,4 @@ class DruidCommand extends commando.Command
             message.channel.sendEmbed(myinfo);
     }
 }
-module.exports = DruidCommand;
+module.exports = RougeCommand;
