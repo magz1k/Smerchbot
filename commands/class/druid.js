@@ -18,7 +18,7 @@ class DruidCommand extends commando.Command
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Друид")
             .addField("**Медведь**", "[ссылка на гайд](https://www.icy-veins.com/wow/guardian-druid-pve-tank-guide)", true)
-            .addField("*Баланс**", "[ссылка на гайд](https://www.icy-veins.com/wow/balance-druid-pve-dps-guide)", true) 
+            .addField("**Баланс**", "[ссылка на гайд](https://www.icy-veins.com/wow/balance-druid-pve-dps-guide)", true) 
             .addField("**Кот**", "[ссылка на гайд](https://www.icy-veins.com/wow/feral-druid-pve-dps-guide)", true) 
             .addField("**Дерево**", "[ссылка на гайд](https://www.icy-veins.com/wow/restoration-druid-pve-healing-guide)", true)
             .setDescription ("Выберите спек")
