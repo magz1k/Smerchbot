@@ -6,9 +6,9 @@ class WarrCommand extends commando.Command
     constructor(client)
     {
         super(client,{
-            name: 'war',
+            name: 'warrior',
             group: 'class',
-            memberName: 'war',
+            memberName: 'warrior',
             description: 'класс Воин'
         });
     }
@@ -17,9 +17,9 @@ class WarrCommand extends commando.Command
     {
         var myinfo = new discord.RichEmbed()
             .setTitle("Класс Воин")
-            .addField("**Защита**", "*!warp*", true)
-            .addField("**Оружее**", "*!wara*", true)
-            .addField("**Неистовство**", "*!warf*", true)
+            .addField("<:tank:567647267171991564>**Защита**", "**", true)
+            .addField("<:dd:567647267578707988>**Оружее**", "*!*", true)
+            .addField("<:dd:567647267578707988>**Неистовство**", "*!*", true)
             .setDescription ("Выберите спек")
             .setColor("#b9915d")
             .setThumbnail("")
