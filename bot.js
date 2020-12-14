@@ -1,7 +1,7 @@
 const Commando = require('discord.js-commando');
 const discord = require('discord.js');
 const bot = new Commando.Client({
-    commandPrefix: '>'
+    commandPrefix: '!'
     });
 
 bot.on('ready', () => {
@@ -79,7 +79,7 @@ bot.on('voiceStateUpdate', (oldMember, newMember) => {
 
 
 bot.on('ready', function(){
-    console.log("Ready");
+    console.log("Ready to go!");
 })
 
 bot.login(process.env.BOT_TOKEN);
